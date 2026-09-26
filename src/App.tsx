@@ -7,6 +7,7 @@ import { RegressionPanel } from './RegressionPanel'
 import { AttributionPanel } from './AttributionPanel'
 import { ExceptionPanel } from './ExceptionPanel'
 import { SnapshotPanel } from './SnapshotPanel'
+import { TandemPanel } from './TandemPanel'
 import { ImportModal, ExportModal } from './Modals'
 import { ImportExceptionsModal } from './ExceptionImportModal'
 import { ReorderPreviewModal } from './ReorderPreviewModal'
@@ -246,6 +247,10 @@ export default function App() {
 
       <div className="section-gap">
         <SnapshotPanel rules={rules} />
+      </div>
+
+      <div className="section-gap">
+        <TandemPanel rules={rules} />
       </div>
 
       <div className="section-gap">

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { RuleTable } from './RuleTable'
 import { AuditResults } from './AuditResults'
 import { GoalVerify } from './GoalVerify'
+import { TwoStagePanel } from './TwoStagePanel'
 import { SimplifyPanel } from './SimplifyPanel'
 import { RegressionPanel } from './RegressionPanel'
 import { AttributionPanel } from './AttributionPanel'
@@ -221,6 +222,10 @@ export default function App() {
 
       <div className="section-gap">
         <GoalVerify rules={rules} />
+      </div>
+
+      <div className="section-gap">
+        <TwoStagePanel rules={rules} />
       </div>
 
       <div className="section-gap">

@@ -729,6 +729,47 @@ pre.json-preview {
   }
 }
 
+/* ---- 双级串联策略 ---- */
+.two-stage-form {
+  grid-template-columns: minmax(150px, 1.6fr) minmax(150px, 1.4fr) minmax(90px, 0.7fr) minmax(150px, 1.5fr) minmax(150px, 1.5fr) auto;
+}
+
+@media (max-width: 1100px) {
+  .two-stage-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.two-stage-json-label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.two-stage-json-label > span {
+  display: block;
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.two-stage-json {
+  width: 100%;
+  min-height: 130px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.two-stage-json:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
 .notice.ok {
   background: var(--ok-bg);
   border: 1px solid rgba(54, 192, 138, 0.35);
